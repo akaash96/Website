@@ -23,15 +23,53 @@
 		  </li>
 		 </ul>
 		</nav>
- <div id="content">
-   <h4>PlayStation 4 (PS4) is a line of eighth generation home 
-   video game consoles developed by Sony Interactive Entertainment. 
-   Announced as the successor to the PlayStation 3 during 
-   a press conference on February 20, 2013, it was launched
-   on November 15 in North America, November 29 in Europe,
-   South America and Australia; and February 22, 2014, in 
-   Japan. It competes with Nintendo's Wii U and Switch,
-   and Microsoft's Xbox One.</h4>
- </div>  
+	 <div id="content">
+	  <div class="slides">
+  <img class="mySlides2" src="images/ps41.jpg">
+  <img class="mySlides2" src="images/ps42.jpg">
+</div>
+
+<script>
+var myIndex = 0;
+carousel1();
+
+function carousel1() {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel1, 3000); // Change image every 3 seconds
+}
+</script>
+  
+		<h4>PlayStation 4 (PS4) is a line of eighth generation home video game consoles developed by Sony Interactive Entertainment. 
+		Announced as the successor to the PlayStation 3 during a press conference on February 20, 2013, it was launched
+		on November 15 in North America, November 29 in Europe, South America and Australia; and February 22, 2014, in 
+		Japan. It competes with Nintendo's Wii U and Switch, and Microsoft's Xbox One.
+		
+		<p>The PlayStation 4 uses an Accelerated Processing Unit (APU) developed by AMD in cooperation 
+		with Sony. It combines a central processing unit (CPU) and graphics processing unit (GPU), as 
+		well as other components such as a memory controllerand video decoder. The CPU consists of 
+		two quad-core Jaguar modules totaling 8 x86-64 cores. The GPU consists of 18 compute units to 
+		produce a theoretical peak performance of 1.84 TFLOPS. The system's GDDR5 memory is 
+		capable of running at a maximum clock frequency of 2.75 GHz (5500 MT/s) and has a maximum 
+		memory bandwidth of 176 GB/s. The console contains 8 GB of GDDR5 memory, 16 times the 
+		amount of RAM found in the PS3 and is expected to give the console considerable longevity. It 
+		also includes secondary custom chips that handle tasks associated with downloading, uploading, 
+		and social gameplay. These tasks can be handled seamlessly in the background during 
+		gameplay or while the system is in sleep mode. The console also contains an audio module, 
+		which can support in-game chat as well as "a very large number" of audio streams for use in-
+		game. All PlayStation 4 models support high dynamic range (HDR) color profiles.</p>
+		</h4>
+ 
+
+	 </div>  
+ 
+  
+
 	 </body>
 </html>

@@ -80,10 +80,12 @@ h3{
 
 h4{
 	color: white;
-	font-family: Verdana;
-	text-align: left;
-	font-size: 13px;
-	
+	margin-left:5%;
+	margin-right: 5%;
+	font-size:90%;
+	padding-left: 1px;
+	padding-top: 1px;
+	font-family: Verdana; 
 }
 
 img{
@@ -129,3 +131,8 @@ img#bundle1{
 	height: 220px; 
 }
 
+img.mySlides2{
+	padding-left: 300px;
+	padding-top: 20px;
+
+}
