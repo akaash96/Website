@@ -139,6 +139,7 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
+	color: white;
 }
 
 *{
@@ -146,7 +147,7 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
+    padding: 6px;
     float: left;
     width: 25%;
 }
@@ -170,3 +171,23 @@ div.desc {
     clear: both;
 }
 </style>
+
+CentreMap{
+	Margin-left: 300px;
+}
+
+CentreForm{
+	Margin-left: 300px;
+}
+
+<style>
+    #get-name {
+      background: #eee;
+      padding: 0.5em;
+    }
+    h1 {
+      background: #333;
+      color: #eee;
+      padding-left: 0.25em
+    }
+  </style>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	 <link rel="stylesheet" type="text/css" href="css/main.css">
+	 <link rel="stylesheet" type="text/css" href="css/main.css"> <!--Stylesheet i will be using to link my css for designing my html-->
 	</head>
 	 <body>
 	  <header>
-	   <h1>Gameworld</h1>
+	   <h1>Gameworld</h1> <!--title that will go at the top of the page-->
 	  </header>
-		<nav id="nav">
+		<nav id="nav"> <!--My navigation bar starts here and i have used part java to get my dropdown buttons on certain sections for pages-->
 		 <ul>
 		  <li><a href="index.html">Home</a>
 		  <li class="dropdown">
@@ -16,24 +16,33 @@
 			 <a href="ps4.html">PS4</a>
 			 <a href="xboxOne.html">Xbox One</a>
 		  <li class="dropdown">
-		   <a href="games.html" class="dropbtn">Games</a>
 		    <div class="dropdown-content">
 		  <li><a href="contact.html">Contact us</a>	 
 		    </div>
 		  </li>
 		 </ul>
 		</nav>
- <div id="content">
+		<h1>Hello <span id="my-name"></span>!</h1>
+
+  <form id="get-name" action="#" method="post">
+    <label for="user-name">Enter name:</label>
+    <input type="text" id="user-name" placeholder="Your name?">
+    <input type="submit">
+  </form>
+
+  <script src="js/localstore.js"></script>
+ </div>  
+ <div id="content"> <!--Any content i add that will have my custom designs in the css-->
 	<h3>Latest released Games</h3>
 	<h2>Consoles</h2>
-	  <div class="slides">
+	  <div class="slides"> <!--Added in images and called it "slides" as i will dsiplay a slideshow-->
   <img class="mySlides" src="images/cod.jpg">
   <img class="mySlides" src="images/nfs.jpg">
   <img class="mySlides" src="images/starWars.jpg">
 </div>
 
 <script>
-var myIndex = 0;
+var myIndex = 0; <!--All the java needed for the slideshow to work on my browsers-->
 carousel1();
 
 function carousel1() {
@@ -49,14 +58,14 @@ function carousel1() {
 }
 </script>
 
-<div class="slides1">
+<div class="slides1"> <!--For my second slideshpw pictures-->
   <img class="mySlides1" src="images/ps4.jpg">
   <img class="mySlides1" src="images/xbox.jpg">
   <img class="mySlides1" src="images/switch.jpg">
 </div>
 
-<script>
-var myIndex = 0;
+<script> <!--Second part of scripted java for the second slideshows i added-->
+var myIndex = 0; 
 carousel();
 
 function carousel() {
@@ -73,7 +82,7 @@ function carousel() {
 </script>
 
 
-  <img id="bundle" src="images/ps4bundle.jpg">
+  <img id="bundle" src="images/ps4bundle.jpg"> <!--Use of standard images here i make sure i ID everything so i can edit within CSS-->
   <img id="bundle1" src="images/ps4proBundle.jpg">
 
  </div>  
