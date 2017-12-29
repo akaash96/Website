@@ -91,7 +91,7 @@ div#content {
 	margin-right: 5%;
 	background-color: #474a4f;
 	padding-bottom: 10%;
-	text-align: center;
+	float: center;
 }
 
 img.mySlides{
@@ -123,10 +123,7 @@ img#bundle1{
 
 <style>
 div.gallery {
-    margin: 5px;
     border: 1px solid #ccc;
-    float: left;
-    width: 180px;
 }
 
 div.gallery:hover {
@@ -134,13 +131,42 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 225;
-    height: 225;
-	margin-left: 0px;
+    width: 100%;
+    height: auto;
+	margin-left: 1px;
 }
 
 div.desc {
     padding: 15px;
     text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
